@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+venv/
+.env
+
+# App data
+backend/data/uploads/*
+!backend/data/uploads/.gitkeep
+backend/data/index/*
+!backend/data/index/.gitkeep
+backend/data/*.db
+backend/data/*.sqlite
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Docker
+mysql_data/
