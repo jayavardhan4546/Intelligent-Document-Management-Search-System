@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #172033;
+}
+
+.container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: white;
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+}
+
+h1 {
+    margin: 16px 0 10px;
+    font-size: clamp(30px, 5vw, 52px);
+    line-height: 1.05;
+}
+
+.subtitle {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #566071;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 12px 30px rgba(18, 31, 53, 0.08);
+    margin-bottom: 20px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+h2 {
+    margin: 0 0 10px;
+    font-size: 22px;
+}
+
+.muted {
+    margin-top: 0;
+    color: #667085;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+input[type="file"],
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #d0d5dd;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-weight: 700;
+    cursor: pointer;
+    background: #172033;
+    color: white;
+}
+
+button.secondary {
+    background: #eef2f7;
+    color: #172033;
+}
+
+.status {
+    margin-top: 14px;
+    font-size: 14px;
+}
+
+.status.success {
+    color: #027a48;
+}
+
+.status.error {
+    color: #b42318;
+}
+
+.results,
+.documents {
+    margin-top: 14px;
+}
+
+.result-item,
+.document-item {
+    padding: 16px;
+    border: 1px solid #eaecf0;
+    border-radius: 14px;
+    margin-bottom: 12px;
+    background: #fcfcfd;
+}
+
+.result-title {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.score {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: #eef2f7;
+    color: #344054;
+    font-size: 12px;
+}
+
+.chunk {
+    line-height: 1.55;
+    color: #3d4658;
+}
+
+.empty {
+    color: #667085;
+}
+
+@media (max-width: 800px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    form,
+    .section-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

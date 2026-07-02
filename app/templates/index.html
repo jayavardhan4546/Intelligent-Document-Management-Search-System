@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intelligent Document Search</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+    <main class="container">
+        <section class="hero">
+            <p class="badge">FastAPI + NLP + FAISS + SQLite</p>
+            <h1>Intelligent Document Management & Search System</h1>
+            <p class="subtitle">
+                Upload documents and search them using semantic meaning, not only keywords.
+            </p>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <h2>Upload Document</h2>
+                <p class="muted">Supported: TXT, PDF, DOCX</p>
+                <form id="uploadForm">
+                    <input type="file" id="fileInput" accept=".txt,.pdf,.docx" required />
+                    <button type="submit">Upload & Index</button>
+                </form>
+                <div id="uploadStatus" class="status"></div>
+            </div>
+
+            <div class="card">
+                <h2>Semantic Search</h2>
+                <p class="muted">Example: annual report, leave policy, project deadline</p>
+                <form id="searchForm">
+                    <input type="text" id="searchInput" placeholder="Ask something from your documents..." required />
+                    <button type="submit">Search</button>
+                </form>
+                <div id="searchStatus" class="status"></div>
+            </div>
+        </section>
+
+        <section class="card full-width">
+            <div class="section-header">
+                <h2>Search Results</h2>
+                <button id="refreshDocsBtn" class="secondary">Refresh Documents</button>
+            </div>
+            <div id="results" class="results empty">No search results yet.</div>
+        </section>
+
+        <section class="card full-width">
+            <h2>Uploaded Documents</h2>
+            <div id="documents" class="documents empty">No documents loaded yet.</div>
+        </section>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

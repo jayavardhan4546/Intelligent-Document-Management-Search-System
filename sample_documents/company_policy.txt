@@ -1,0 +1,11 @@
+Company Leave Policy
+
+Employees are eligible for 18 paid leaves every year. Leave requests must be submitted at least 3 working days in advance. Emergency leave can be approved by the reporting manager.
+
+Annual Report Summary
+
+The company improved operational efficiency by using automation and document search tools. Knowledge retrieval time was reduced because employees could search internal documents using natural language queries.
+
+Project Deadline Note
+
+The Intelligent Document Management project uses FastAPI for backend APIs, Sentence Transformers for embeddings, FAISS for vector similarity search, and SQLite for storing document metadata and text chunks.
